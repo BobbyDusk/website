@@ -45,7 +45,7 @@ main {
     height: 100%;
     padding: 1rem;
     gap: 1rem;
-    width: 60ch;
+    width: clamp(200px, 60ch, 100%);
     margin: auto;
 }
 
