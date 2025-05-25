@@ -31,6 +31,7 @@ html, body, p, h1, h2, h3, h4, h5, h6, input, span, button, a, ul, li, ol, div {
 ul, p, h1, h2, h3, h4, h5, h6, input {
     margin: 0;
     padding: 0;
+    line-height: 1.5;
 }
 
 body, p, h1, h2, h3, h4, h5, h6 {
@@ -66,3 +67,7 @@ button, input[type="submit"] {
 a {
     color: inherit;
 } 
+
+ul {
+    margin-left: 4ch;
+}
