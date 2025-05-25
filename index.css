@@ -28,10 +28,10 @@ html, body, p, h1, h2, h3, h4, h5, h6, input, span, button, a, ul, li, ol, div {
     font-family: sans-serif;
 }
  
-ul, p, h1, h2, h3, h4, h5, h6, input {
+ul, p, h1, h2, h3, h4, h5, h6, input, li {
     margin: 0;
     padding: 0;
-    line-height: 1.5;
+    line-height: 2.0;
 }
 
 body, p, h1, h2, h3, h4, h5, h6 {
