@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Postiz Pinterest Integration</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: #fafafa;
+        }
+        .container {
+            background: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border: 1px solid #e1e1e1;
+        }
+        h1 {
+            color: #111;
+            border-bottom: 2px solid #bd081c; /* Pinterest Accent */
+            padding-bottom: 10px;
+            font-size: 24pt;
+            margin-top: 0;
+        }
+        h2 {
+            color: #222;
+            font-size: 14pt;
+            margin-top: 30px;
+        }
+        p, li {
+            font-size: 11pt;
+            color: #444;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        .footer {
+            margin-top: 40px;
+            font-size: 9pt;
+            color: #777;
+            text-align: center;
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Privacy Policy</h1>
+        <p><strong>Effective Date:</strong> June 21, 2026</p>
+        <p>This Privacy Policy outlines how our Pinterest Integration App for Postiz ("the App") handles, stores, and protects user data authorized through the Pinterest Developer Platform.</p>
+
+        <h2>1. Scopes and Data Accessed</h2>
+        <p>When connecting your Pinterest account to Postiz via our integration, the App requests permission to look at and manage specified structural elements through OAuth:</p>
+        <ul>
+            <li><strong>Profile Information:</strong> Username, bio, and profile image to identify your workspace channel within Postiz.</li>
+            <li><strong>Boards & Pins Data:</strong> Structural details of your Pinterest boards to enable target destination mapping, and Pin text/image data sent for content generation.</li>
+            <li><strong>OAuth Tokens:</strong> Read and write access credentials required to interface directly with Pinterest endpoints on your behalf.</li>
+        </ul>
+
+        <h2>2. Data Handling Practices</h2>
+        <p>The retrieved data is strictly limited to operations initiated by you within your Postiz instance (e.g., publishing a Pin or fetching board lists). Because this code runs locally inside your self-hosted or cloud instance of Postiz, your analytics, tokens, and asset configurations never leave your architecture, except when securely sent directly to Pinterest's developer API servers.</p>
+
+        <h2>3. Disclosure & Security</h2>
+        <p>We do not lease, trade, or distribute your account identifiers or access tokens to any external entity. All API requests are run over transport layers utilizing standard HTTPS encryption parameters.</p>
+
+        <h2>4. Data Revocation and Removal</h2>
+        <p>You can instantly cut permissions and purge any integration state data stored inside your application environment:</p>
+        <ul>
+            <li>Disconnecting the Pinterest channel profile interface within your Postiz account configuration panel.</li>
+            <li>Navigating to your native Pinterest security configuration under <strong>Settings &gt; Security and Logins &gt; Apps</strong> and choosing to revoke access to this app. Doing so instantly renders the app tokens obsolete.</li>
+        </ul>
+
+        <h2>5. Amendments</h2>
+        <p>This privacy declaration may be revised periodically. Any relevant modifications will be indicated by the date stamp at the head of the statement.</p>
+
+        <h2>6. Contact</h2>
+        <p>For concerns regarding integration privacy logic, please contact the local technical administrator of your Postiz workspace environment.</p>
+
+        <div class="footer">
+            &copy; 2026 Postiz Integration. Independent open-source community tool.
+        </div>
+    </div>
+</body>
+</html>
