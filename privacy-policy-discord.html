@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Postiz Discord Bot Integration</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: #fafafa;
+        }
+        .container {
+            background: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border: 1px solid #e1e1e1;
+        }
+        h1 {
+            color: #111;
+            border-bottom: 2px solid #5865F2; /* Discord Blurple */
+            padding-bottom: 10px;
+            font-size: 24pt;
+            margin-top: 0;
+        }
+        h2 {
+            color: #222;
+            font-size: 14pt;
+            margin-top: 30px;
+        }
+        p, li {
+            font-size: 11pt;
+            color: #444;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        .footer {
+            margin-top: 40px;
+            font-size: 9pt;
+            color: #777;
+            text-align: center;
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Privacy Policy</h1>
+        <p><strong>Effective Date:</strong> June 22, 2026</p>
+        <p>This Privacy Policy documents how our Discord Bot Integration for Postiz ("the Bot") accesses, treats, and maintains server data authorized through the Discord Developer Portal.</p>
+
+        <h2>1. Information Accessed and Handled</h2>
+        <p>To securely pipe workspace post updates into your server, the Bot requests distinct Discord OAuth2 / Bot application permissions:</p>
+        <ul>
+            <li><strong>Guild/Server Metadata:</strong> Unique server identification numbers, channel titles, and category paths to help map where your Postiz notifications should print.</li>
+            <li><strong>Bot Identity & Tokens:</strong> Secured token sets deployed locally inside your environment to safely call Discord endpoints.</li>
+            <li><strong>Message Delivery Payloads:</strong> Text strings, hyperlink URLs, thumbnail assets, and media components configured inside Postiz to generate the final chat embeds.</li>
+        </ul>
+        <p><em>Note: This integration does NOT track, read, or cache chat logs, user text patterns, or personal profile data across your channels. It operates purely as a directional outbound broadcast assistant.</em></p>
+
+        <h2>2. Processing Context</h2>
+        <p>Data routing remains exclusively functional to satisfy notifications you program. Because this application is written to deploy locally on your self-hosted or dedicated cloud system infrastructure, no logs are outsourced or shared with central indexing servers. Transfers take place explicitly over TLS-guarded lanes connecting your machine to official Discord gateway servers.</p>
+
+        <h2>3. Third-Party Sharing</h2>
+        <p>We do not capture, trade, or distribute server identifiers, channel structures, or configurations to marketing pipelines or third-party networks.</p>
+
+        <h2>4. Data Retention & Erasure</h2>
+        <p>Configuration hooks run continuously within your database stack as long as the Bot remains installed. You can delete authorization logs and permanently wipe stored parameters at your discretion:</p>
+        <ul>
+            <li>Deleting the specific Discord destination feed out of your local Postiz account panel.</li>
+            <li>Right-clicking the Bot profile within your server configuration hierarchy and selecting <strong>Kick Bot</strong> or <strong>Ban Bot</strong>. Dropping the bot terminates gateway connectivity and renders database authentication payloads completely useless.</li>
+        </ul>
+
+        <h2>5. Policy Revisions</h2>
+        <p>This document may change as Discord alters developer guidelines. Revised definitions will carry an adjusted timeline stamp at the top of this content view.</p>
+
+        <h2>6. Technical Contact</h2>
+        <p>For operations concerning server data privacy controls, please connect directly with the administrator running your Postiz core environment.</p>
+
+        <div class="footer">
+            &copy; 2026 Postiz Integration. Independent open-source community tool.
+        </div>
+    </div>
+</body>
+</html>
