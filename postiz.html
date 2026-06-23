@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postiz-bobbydusk Integration - Dusky</title>
+    <style>
+        :root {
+            --primary-color: #fe2c55; /* TikTok Brand Red */
+            --secondary-color: #25f4ee; /* TikTok Brand Cyan */
+            --dark-color: #121212;
+            --light-bg: #f8f9fa;
+            --text-color: #333;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+        }
+
+        header {
+            background-color: var(--dark-color);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            border-bottom: 4px solid var(--primary-color);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+            letter-spacing: -0.5px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            color: var(--dark-color);
+            margin-bottom: 10px;
+        }
+
+        .badge {
+            display: inline-block;
+            background-color: var(--dark-color);
+            color: white;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            border: 1px solid #333;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto 30px auto;
+            color: #555;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .feature-card {
+            background: var(--light-bg);
+            padding: 25px;
+            border-radius: 8px;
+            border-left: 4px solid var(--primary-color);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        .feature-card h3 {
+            margin-top: 0;
+            color: var(--dark-color);
+        }
+
+        .scopes-section {
+            margin-top: 60px;
+            background-color: #fff;
+            border: 1px solid #e1e1e1;
+            padding: 30px;
+            border-radius: 8px;
+        }
+
+        .scopes-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .scopes-list li {
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+            font-size: 1rem;
+        }
+
+        .scopes-list li:last-child {
+            border-bottom: none;
+        }
+
+        .scopes-list strong {
+            color: var(--primary-color);
+        }
+
+        footer {
+            background-color: var(--dark-color);
+            color: #aaa;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 80px;
+            border-top: 1px solid #333;
+        }
+
+        footer p {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+
+        /* CRITICAL TIKTOK REQUIREMENT: Direct, fully visible legal links in the footer */
+        .legal-links {
+            margin: 20px 0;
+        }
+
+        .legal-links a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 600;
+            border-bottom: 1px dashed var(--primary-color);
+            padding-bottom: 2px;
+        }
+
+        .legal-links a:hover {
+            color: var(--secondary-color);
+            border-bottom-color: var(--secondary-color);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Dusky Ecosystem</h1>
+    </header>
+
+    <section class="hero">
+        <div class="badge">Official API Integration</div>
+        <h2>Postiz-bobbydusk</h2>
+        <p>An automated social media deployment app used to manage, schedule, and safely automate video publishing directly to your TikTok feed.</p>
+    </section>
+
+    <div class="container">
+        
+        <section class="overview">
+            <h2>App Functionality</h2>
+            <p><strong>Postiz-bobbydusk</strong> connects an independent, self-hosted Postiz software instance directly to the TikTok Developer Platform. Designed specifically for content creators managing unique personal workflows, this integration ensures absolute data control while maintaining reliable social media consistency.</p>
+        </section>
+
+        <section class="features">
+            <div class="feature-card">
+                <h3>Automated Scheduling</h3>
+                <p>Draft your creative captions and arrange your video calendar natively inside Postiz, letting our server deploy posts exactly when your audience is active.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Direct Video Uploads</h3>
+                <p>Bypass manual mobile transfers. Seamlessly stage, transfer, and push high-definition video assets straight to your TikTok profile using official Webhooks.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Secure Token Security</h3>
+                <p>Leveraging secure industry-standard OAuth 2.0 architectures, credentials map directly to your localized client database environment.</p>
+            </div>
+        </section>
+
+        <!-- Demonstrates data transparency to the platform reviewers -->
+        <section class="scopes-section">
+            <h2>API Usage & Requested Data</h2>
+            <p>To perform automated commands efficiently, this application utilizes authorized credentials to request specific platform access scopes:</p>
+            <ul class="scopes-list">
+                <li><strong>user.info.basic:</strong> Used to display your authenticated user avatar and profile handle inside your local Postiz channel dashboard.</li>
+                <li><strong>video.upload / video.publish:</strong> Used exclusively to deliver your scheduled video binaries, video metadata, and descriptive captions directly into your TikTok creator feed.</li>
+            </ul>
+        </section>
+
+    </div>
+
+    <footer>
+        <!-- Fixed unhidden footer links for TikTok App Review compliance -->
+        <div class="legal-links">
+            <a href="/legal/terms-of-service-tiktok">Terms of Service</a>
+            <a href="/legal/privacy-policy-tiktok">Privacy Policy</a>
+        </div>
+        <p>&copy; 2026 Edge of Dusk. All rights reserved.</p>
+        <p>This integration platform runs independently via official public API endpoints provided by the TikTok Developer Program.</p>
+    </footer>
+
+</body>
+</html>
